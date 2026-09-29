@@ -1,0 +1,24 @@
+package com.example.employeeinfo_2415141122115
+import android.os.Bundle
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val employee = Employee(
+            maNV = "NV2415115",
+            hoTen = "Nguyễn Thị Thục Quyên",
+            phongBan = "Phòng Công nghệ Thông tin",
+            tuoi = 22,
+            luong = 15500000.0,
+            gioiTinh = "Nữ",
+            thamNien = 3
+        )
+        val tvEmployeeInfo = findViewById<TextView>(R.id.tvEmployeeInfo)
+
+        tvEmployeeInfo.text = employee.getDisplayInfo()
+    }
+}

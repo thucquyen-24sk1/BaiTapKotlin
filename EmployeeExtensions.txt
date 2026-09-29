@@ -24,6 +24,6 @@ fun Employee.getDisplayInfo(): String {
         Giới tính: $gioiTinh
         Tuổi: $tuoi
         Lương: ${getFormattedLuong()}
-        Thâm niên: $seniority năm (${getThamNienLevel()})
+        Thâm niên: $thamNien năm (${getThamNienLevel()})
     """.trimIndent()
 }
