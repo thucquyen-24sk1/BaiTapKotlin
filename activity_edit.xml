@@ -9,28 +9,25 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="THÔNG TIN HỒ SƠ"
+        android:text="CẬP NHẬT HỌ TÊN"
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_marginBottom="16dp" />
 
-    <!-- TextView hiển thị tên -->
-    <TextView
-        android:id="@+id/tvName"
+    <!-- EditText để nhập tên mới -->
+    <EditText
+        android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Chưa có thông tin"
+        android:hint="Nhập họ tên mới"
         android:textSize="16sp"
-        android:gravity="center"
-        android:padding="12dp"
-        android:background="#F0F0F0"
         android:layout_marginBottom="24dp" />
 
-    <!-- Nút mở màn hình chỉnh sửa -->
+    <!-- Nút lưu và trả về -->
     <Button
-        android:id="@+id/btnEdit"
+        android:id="@+id/btnSave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Chỉnh sửa thông tin" />
+        android:text="Lưu &amp; Quay lại" />
 
 </LinearLayout>
